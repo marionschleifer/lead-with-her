@@ -3,3 +3,6 @@
 	margin: 0px;
     box-sizing: border-box;
 }
+.header-section{
+	background-image: url("images/get-background.jpg");
+}
