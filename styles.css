@@ -1,8 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto&display=swap');
 *{
 	padding: 0px;
 	margin: 0px;
     box-sizing: border-box;
+    font-family: 'Open Sans' , sans-serif;
+    overflow-x: hidden;
 }
 .header-section{
 	background-image: url("images/get-background.jpg");
+    height: 900px;
+}
+.logoname{
+    font-size: 2em;
+    position: absolute;
+	top: 75px;
+	left: 5%;
+    color: white;
+    font-family: 'Roboto' , sans-serif;
+}
+.nav-bar-box{
+	box-sizing: border-box;
+	width: 100%;
+	margin-left: 15%;
+	padding-left: 10%;
+	padding-bottom: 5%;
+}
+.nav-bar--{
+	display: inline-block;
+	list-style-type: none;
+	color: white;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-radius: 20px;
+	margin-top: 5%;
+	margin-left: 1%;
+}
+.nav-bar-{
+	background-color: #795388;
+}
+.nav-an{
+	text-decoration: none;
+	color: white;
+	font-size: 22px;
+	font-weight: bolder;
+}
+.nav-bar--:hover{
+	background-color: #795388;
+}
+.register-btn{
+	float: right;
+	position: relative;
+	bottom: 120px;
+	right: 10%;
+}
+.r-btn{
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-radius: 20px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+	color: #78285c;
+	font-weight: 900;
+}
+.text-get-started{
+	padding-top: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.text-one{
+	font-weight: 900;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3em;
+	color: white;
+    text-align: center;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding-bottom: 5%;
+}
+.text-two{
+	color: white;
+	font-weight: lighter;
+    text-align: center;
+	margin-right: 26%;
+    margin-left: 25%;
+    padding-bottom: 3%;
+}
+.btn-get-started{
+	text-align: center;
+}
+.get-btn{
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-radius: 20px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+	color: #78285c;
+	font-weight: 900;
 }
