@@ -1,1 +1,140 @@
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+.header-section{
+    background-image: url(images/get-background.jpg);
+    height: 900px;
+}
+.logoname{
+    font-size: 2em;
+    position: absolute;
+    top: 75px;
+    left: 5%;
+    color: white;
+    font-family: Roboto, sans-serif;
+}
+.nav-bar-box{
+    width: 100%;
+    margin-left: 15%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+}
+.nav-bar-{
+    background-color: rgb(121, 83, 136);
+}
+.nav-bar--{
+    display: inline-block;
+    list-style-type: none;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 5%;
+    margin-left: 1%;
+    border-radius: 20px;
+}
+.nav-bar--:hover{
+	background-color: rgb(121, 83, 136);
+}
+.nav-an{
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.register-btn{
+    float: right;
+    position: relative;
+    bottom: 120px;
+    right: 10%;
+}
+.r-btn{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    background-color: white;
+    color: rgb(120, 40, 92);
+    font-weight: 900;
+    border-radius: 20px;
+}
+.r-btn:hover{
+    text-decoration: underline;
+}
+.text-get-started{
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.text-one{
+    font-weight: 900;
+    font-family: Roboto, sans-serif;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding-bottom: 5%;
+}
+.text-two{
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    margin-right: 26%;
+    margin-left: 25%;
+    padding-bottom: 3%;
+}
+.btn-get-started{
+    text-align: center;
+}
+.get-btn{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    background-color: white;
+    color: rgb(120, 40, 92);
+    font-weight: 900;
+    border-radius: 20px;
+}
+.get-btn:hover{
+    text-decoration: underline;
+}
+.main-aboutus{
+    display: flex;
+    padding: 10%;
+}
+.img-aboutus{
+    width: 100%;
+}
+.text-aboutus{
+    width: 80%;
+    padding-top: 8%;
+    padding-right: 3%;
+}
+.heading-aboutus{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    color: rgb(120, 40, 92);
+    font-weight: 900, bolder;
+    padding-bottom: 5%;
+}
+.para-aboutus{
+    line-height: 27px;
+    text-align: justify;
+    color: #494949;
+}
+.main-code{
+    background-image: url(images/background-code.jpg);
+    height: 962px;
+}
