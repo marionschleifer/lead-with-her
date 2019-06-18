@@ -40,7 +40,7 @@
     border-radius: 20px;
 }
 .nav-bar--:hover{
-	background-color: rgb(121, 83, 136);
+    background-color: rgb(121, 83, 136);
 }
 .nav-an{
     color: white;
@@ -137,4 +137,39 @@
 .main-code{
     background-image: url(images/background-code.jpg);
     height: 962px;
+    padding: 5%;
+}
+.heading-code{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    color: white;
+    font-weight: 900, bolder;
+    padding-bottom: 5%;
+}
+.subheading-code{
+    text-align: center;
+    font-weight: lighter;
+    text-align: center;
+    margin-right: 26%;
+    margin-left: 25%;
+    padding-bottom: 3%;
+    color: white;
+}
+.far{
+   font-size: 30px;
+   background-color: white;
+   border-radius: 19px;
+   color: rgb(120, 40, 92);
+   border: 1px solid transparent;
+   clear: both;
+   float: left;
+   margin-left: 5%;
+}
+.points{
+    color: white;
+    font-size: 20px;
+    margin-left: 150px;
+    margin-right: 148px;
+    margin-bottom: 60px;
 }
