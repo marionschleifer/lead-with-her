@@ -5,33 +5,47 @@
 	<link rel="stylesheet" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script type="text/javascript" src="jquery/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    	$('.team-members').slick({
+  centerMode: true,
+  centerPadding: '520px',
+  slidesToShow: 1,
+});
+});
+    </script>
 </head>
 <body>
 
 	<div class="header-section">
 
-	<header>
+ 	<header>
 
 		<div class="logo">
 			<h1 class="logoname">LeadWithHer</h1>
 		</div>
 
 		<nav class="nav-box">
-		<div class="nav-bar-box">
-			<ul class="nav-bar">
-				<li class="nav-bar-- nav-bar-"> <a class="nav-an" href="#">Home</a></li>
-				<li class="nav-bar--"> <a class="nav-an" href="#">About us</a></li>
-				<li class="nav-bar--"> <a class="nav-an" href="#">Code of Conduct</a></li>
-				<li class="nav-bar--"> <a class="nav-an" href="#">Guidelines</a></li>
-				<li class="nav-bar--"> <a class="nav-an" href="#">Team</a></li>
-			</ul>
-		</div>
-
-        <div class="register-btn">
-        	<button class="r-btn">Register</button>
-        </div>
-	    
-	    </nav>
+			<div class="nav-bar-box">
+				<ul class="nav-bar">
+					<li class="nav-bar-- nav-bar-"> <a class="nav-an" href="#">Home</a></li>
+					<li class="nav-bar--"> <a class="nav-an" href="#">About us</a></li>
+					<li class="nav-bar--"> <a class="nav-an" href="#">Code of Conduct</a></li>
+					<li class="nav-bar--"> <a class="nav-an" href="#">Guidelines</a></li>
+					<li class="nav-bar--"> <a class="nav-an" href="#">Team</a></li>
+					<li class="register-btn"><button class="r-btn">Register</button></li>
+				</ul>
+			</div>
+		</nav>
 		
 	</header>
 
@@ -50,7 +64,7 @@
 
 		</section>
 
-		</div>
+	</div>
 
 		<section class="aboutus">
 			
@@ -61,10 +75,8 @@
 				</div>
 
 				<div class="text-aboutus">
-					
 					<h2 class="heading-aboutus">About Us</h2>
 					<p class="para-aboutus"> Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.</p>
-				
 				</div>
 
 			</div>
@@ -75,20 +87,14 @@
 		<section class="code-of-conduct">
 			
 			<div class="main-code">
-				
 				<h2 class="heading-code">Code Of Conduct</h2>
-
 				<h3 class="subheading-code">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</h3>
 
 				<ul class="list-code">
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
-					
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
-					
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
-					
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
-					
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
 				</ul>
 			
@@ -99,18 +105,16 @@
 		<section class="guidelines">
 			
 			<div class="main-guidelines">
-				
-			<h2 class="heading-guidelines">Guidelines</h2>
 
-			<p class="text-guidelines">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				<div class="text-guidelines">
+					<h2 class="heading-guidelines">Guidelines</h2>
+					<p class="para-guidelines">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					<button class="download"><i class="fas fa-download"></i> &nbsp;Download Our Guidelines</button>
+				</div>
 
-			<button class="download">Download Our Guidelines</button>
-			
-			</div>
-
-			<div class="img-guide">
-				
-				<img src="images/guidelines.jpg" alt="guidelines">
+				<div class="img-guide">
+					<img src="images/guidelines.jpg" alt="guidelines">
+				</div>
 
 			</div>
 		
@@ -119,55 +123,41 @@
 		<section class="our-team">
 			
 			<div class="text-team">
+				<h2 class="heading-team">Our Team</h2>
+				<p class="para-team">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+			</div>
+
+			<div class="team-members">
 			
-			<h2 class="heading-team">Our Team</h2>
+				<div class="member-1">
+					<img src="images/ashley.jpg" alt="ashley" class="ashley">
+					<h2 class="name">Ashley Taylor</h2>
+					<h3 class="designation">Senior Creative Designer</h3>
+					<img src="images/social.jpg" alt="social-btns">
+				</div>
 
-			<p class="para-team">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				<div class="member-2">
+					<img src="images/karen.jpg" alt="karen">
+					<h2 class="name">Karen Peterson</h2>
+					<h3 class="designation">Chief Executive Officer</h3>
+					<img src="images/social.jpg" alt="social-btns">
+				</div>
+
+				<div class="member-3">
+					<img src="images/jennifer.jpg" alt="jennifer">
+					<h2 class="name">Jennifer Jimenez</h2>
+					<h3 class="designation">Senior Mentor</h3>
+					<img src="images/social.jpg" alt="social-btns">
+				</div>
 		
-		</div>
-
-		<div class="team-members">
-			
-			<div class="member-1">
-				<img src="images/ashley.jpg" alt="ashley">
-
-				<h2 class="name">Ashley Taylor</h2>
-
-				<h3 class="designation">Senior Creative Designer</h3>
-
-				<img src="images/social.jpg" alt="social-btns">
 			</div>
-
-			<div class="member-2">
-				<img src="images/karen.jpg" alt="karen">
-
-				<h2 class="name">Karen Peterson</h2>
-
-				<h3 class="designation">Chief Executive Officer</h3>
-
-				<img src="images/social.jpg" alt="social-btns">
-			</div>
-
-			<div class="member-3">
-				<img src="images/jennifer.jpg" alt="jennifer">
-
-				<h2 class="name">Jennifer Jimenez</h2>
-
-				<h3 class="designation">Senior Mentor</h3>
-
-				<img src="images/social.jpg" alt="social-btns">
-			</div>
-		
-		</div>
 
 		</section>
 
 		<section class="contact">
 			
 			<div class="main-register">
-				
 				<h1 class="register-heading">Register Your Self</h1>
-
 				<p class="register-para">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
 
 				<div class="sub-register">
@@ -219,37 +209,33 @@
 
 		</section>
 
-</main>
+	</main>
 
-<footer>
+	<footer>
 	
-	<div class="main-footer">
+		<div class="main-footer">
 		
-		<div class="logo">
-			
-			<h1 class="logoname">LeadWithHer</h1>
+			<div class="logo">
+				<h1 class="logoname">LeadWithHer</h1>
 
-			<ul class="footer-links">
-				<li class="links"><a href="#">Home</a></li>
-				<li class="links"><a href="#">About Us</a></li>
-				<li class="links"><a href="#">Code of COnduct</a></li>
-				<li class="links"><a href="#">Guidelines</a></li>
-				<li class="links"><a href="#">Team</a></li>
-			</ul>
+				<ul class="footer-links">
+					<li class="links"><a href="#">Home</a></li>
+					<li class="links"><a href="#">About Us</a></li>
+					<li class="links"><a href="#">Code of COnduct</a></li>
+					<li class="links"><a href="#">Guidelines</a></li>
+					<li class="links"><a href="#">Team</a></li>
+				</ul>
 		
-		</div>
+			</div>
 
-		<div class="copyright">
-			
-			<img src="images/social.jpg" alt="social-btns" class="footer-img">
+			<div class="copyright">
+				<img src="images/social.jpg" alt="social-btns" class="footer-img">
+				<p>&copy;2019LeadWithHer <span>Inc.All rights reserved.</span></p>
+			</div>
 
-			<p>&copy;2019LeadWithHer <span>Inc.All rights reserved.</span></p>
-		
-		</div>
+    	</div>
 
-    </div>
-
-</footer>
+	</footer>
 
 </body>
 

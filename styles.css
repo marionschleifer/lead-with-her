@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto&display=swap');
+@import 
+    url('https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto&display=swap');
 *{
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
@@ -49,10 +50,9 @@
     text-decoration: none;
 }
 .register-btn{
-    float: right;
-    position: relative;
-    bottom: 120px;
-    right: 10%;
+   display: inline-block;
+   list-style-type: none;
+   margin-left: 5%;
 }
 .r-btn{
     padding-left: 25px;
@@ -112,15 +112,15 @@
 }
 .main-aboutus{
     display: flex;
-    padding: 10%;
+    padding: 5%;
 }
 .img-aboutus{
     width: 100%;
 }
 .text-aboutus{
-    width: 80%;
-    padding-top: 8%;
-    padding-right: 3%;
+    width: 100%;
+    padding-top: 7%;
+    margin-left: 5%;
 }
 .heading-aboutus{
     font-family: 'Roboto', sans-serif;
@@ -133,6 +133,7 @@
     line-height: 27px;
     text-align: justify;
     color: #494949;
+    margin-right: 18%;
 }
 .main-code{
     background-image: url(images/background-code.jpg);
@@ -172,4 +173,48 @@
     margin-left: 150px;
     margin-right: 148px;
     margin-bottom: 60px;
+}
+.main-guidelines{
+    display: flex;   
+}
+.heading-guidelines{
+    text-align: justify;
+    margin-left: 15%;
+    padding-top: 10%;
+    color: rgb(120, 40, 92);
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+}
+.para-guidelines{
+    text-align: justify;
+    margin-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-right: 16%;
+    color: #6e6e6e;
+    font-size: 20px;
+    font-weight: 500;
+}
+.download{
+    margin-left: 15%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    background: linear-gradient(to top, #3c1053, #ad5389);
+    color: white;
+    font-weight: 900;
+    border-radius: 20px;
+
+}
+.img-guide{
+    float: left;
+    padding-right: 20%;
+    padding-top: 4%;
+}
+.our-team{
+    background-image: url('images/team-background.jpg');
+    height: 1000px;
 }
