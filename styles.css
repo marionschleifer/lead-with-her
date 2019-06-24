@@ -1,5 +1,4 @@
-@import 
-    url('https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto&display=swap');
 *{
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
@@ -32,10 +31,7 @@
     display: inline-block;
     list-style-type: none;
     color: white;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding: 7px 25px;
     margin-top: 5%;
     margin-left: 1%;
     border-radius: 20px;
@@ -55,10 +51,7 @@
    margin-left: 5%;
 }
 .r-btn{
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding: 7px 25px;
     font-size: 18px;
     font-family: Roboto, sans-serif;
     background-color: white;
@@ -96,10 +89,7 @@
     text-align: center;
 }
 .get-btn{
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding: 7px 25px;
     font-size: 18px;
     font-family: Roboto, sans-serif;
     background-color: white;
@@ -126,7 +116,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 3em;
     color: rgb(120, 40, 92);
-    font-weight: 900, bolder;
+    font-weight: 900;
     padding-bottom: 5%;
 }
 .para-aboutus{
@@ -151,7 +141,6 @@
 .subheading-code{
     text-align: center;
     font-weight: lighter;
-    text-align: center;
     margin-right: 26%;
     margin-left: 25%;
     padding-bottom: 3%;
@@ -197,17 +186,13 @@
 }
 .download{
     margin-left: 15%;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding: 7px 25px;
     font-size: 18px;
     font-family: Roboto, sans-serif;
     background: linear-gradient(to top, #3c1053, #ad5389);
     color: white;
     font-weight: 900;
     border-radius: 20px;
-
 }
 .img-guide{
     float: left;
@@ -217,4 +202,155 @@
 .our-team{
     background-image: url('images/team-background.jpg');
     height: 1000px;
+}
+.contact-flex{
+    display: flex;
+    padding: 5%;
+}
+.main-register{
+    width: 100%;
+    padding-left: 5%;
+    padding-top: 7%;
+}
+.register-heading{
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(120, 40, 92);
+    font-weight: 900;
+}
+.register-para{
+    text-align: justify;
+    padding: 5% 0;
+    margin-right: 15%;
+    color: #6e6e6e;
+    font-size: 20px;
+    font-weight: 500;
+}
+.register-img{
+    clear: both;
+    float: left;
+    border-radius: 53px;
+}
+.sub-register{
+    padding-top: 5%;
+}
+.register-text{
+    margin-left: 19%;
+    margin-top:4%;
+}
+.form{
+    width: 100%;
+    height: 850px;
+    box-shadow: 0px 0px 20px 15px #8080800d;
+}
+.form-heading{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: rgb(120, 40, 92);
+    font-size: 2em;
+    padding-top: 5%;
+    margin-left: 5%;
+}
+.checkbox-1{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.checkbox-2{
+    margin-left: 17%;
+}
+.mentee, .mentor{
+    margin-left: 2%;
+    font-size: 18px;
+    font-weight: 700;
+}
+.form-label{
+    margin-left: 5%;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+}
+.form-input{
+    width: 90%;
+    padding: 17px 0;
+    border: 1px solid #80808026;
+    border-radius: 27px;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.name{
+    margin-top: 5%;
+}
+.register-button{
+    margin-top: 4%;
+    margin-right: 5%;
+    display: block;
+    float: right;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+    background: linear-gradient(to top, #3c1053, #ad5389);
+    color: white;
+    font-weight: 900;
+    border-radius: 35px;
+}
+.main-footer{
+    padding-top: 5%;
+}
+.footer-links{
+    height: 125px;
+    border-top: 1px solid #00000021;
+    display: flex;
+}
+.footer-logo{
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.f-logo{
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: rgb(120, 40, 92);
+}
+.main-links{
+    width: 70%;
+}
+.links{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 8%;
+    margin-top: 5%;
+}
+.footer-an{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #6e6e6e;
+}
+.copyright{
+    height: 125px;
+    background: linear-gradient(to top, #3c1053, #ad5389);
+}
+.footer-img{
+    clear: both;
+    float: left;
+}
+.fab{
+    color: white;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: 38px;
+    margin-left: 1%;
+}
+.fa-facebook{
+    margin-left: 5%;
+}
+.end-line{
+    float: right;
+    margin-right: 7%;
+    margin-top: 45px;
+    color: white;
+    font-size: 20px;
 }
