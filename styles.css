@@ -194,6 +194,9 @@
     font-weight: 900;
     border-radius: 20px;
 }
+.download:hover{
+    text-decoration: underline;
+}
 .img-guide{
     float: left;
     padding-right: 20%;
@@ -203,13 +206,56 @@
     background-image: url('images/team-background.jpg');
     height: 1000px;
 }
+.heading-team{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    font-size: 4em;
+    color: white;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+.para-team{
+    text-align: center;
+    font-size: 23px;
+    color: white;
+    font-weight: 200;
+    margin: 0 25%;
+    padding-bottom: 6%;
+}
+.member{
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 85px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 40px;
+}
+.img-team{
+    margin-left: 220px;
+    border-radius: 114px;
+    width: 218px;
+    height: 217px;
+}
+.name{
+    color: rgb(120, 40, 92);
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 2%;
+}
+.designation{
+    color: rgb(120, 40, 92);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}   
 .contact-flex{
     display: flex;
     padding: 5%;
 }
 .main-register{
     width: 100%;
-    padding-left: 5%;
     padding-top: 7%;
 }
 .register-heading{
@@ -217,11 +263,13 @@
     font-family: 'Roboto', sans-serif;
     color: rgb(120, 40, 92);
     font-weight: 900;
+    margin-left: 5%;
 }
 .register-para{
     text-align: justify;
     padding: 5% 0;
     margin-right: 15%;
+    margin-left: 5%;
     color: #6e6e6e;
     font-size: 20px;
     font-weight: 500;
@@ -230,13 +278,15 @@
     clear: both;
     float: left;
     border-radius: 53px;
+    margin-left: 5%;
 }
 .sub-register{
     padding-top: 5%;
 }
 .register-text{
-    margin-left: 19%;
-    margin-top:4%;
+    margin-left: 21%;
+    margin-top: 30px;
+    text-align: left;
 }
 .form{
     width: 100%;
@@ -272,7 +322,7 @@
 .form-input{
     width: 90%;
     padding: 17px 0;
-    border: 1px solid #80808026;
+    border: 1px solid #80808042;
     border-radius: 27px;
     margin-left: 5%;
     margin-top: 2%;
@@ -283,9 +333,8 @@
 }
 .register-button{
     margin-top: 4%;
-    margin-right: 5%;
+    margin-left: 5%;
     display: block;
-    float: right;
     padding: 15px 40px;
     font-size: 20px;
     font-family: Roboto, sans-serif;
@@ -293,6 +342,9 @@
     color: white;
     font-weight: 900;
     border-radius: 35px;
+}
+.register-button:hover{
+    text-decoration: underline;
 }
 .main-footer{
     padding-top: 5%;
@@ -327,6 +379,9 @@
     font-weight: 700;
     font-size: 20px;
     color: #6e6e6e;
+}
+.footer-an:hover{
+    color: rgb(120, 40, 92);
 }
 .copyright{
     height: 125px;

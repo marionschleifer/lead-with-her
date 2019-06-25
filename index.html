@@ -6,22 +6,20 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<script type="text/javascript" src="jquery/jquery.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://slick/slick-theme.css"/>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
+	<script type="text/javascript" src="slick/slick/slick.min.js"></script>
     <script type="text/javascript">
     	$(document).ready(function(){
     	$('.team-members').slick({
-		  centerMode: true,
-		  centerPadding: '520px',
-		  slidesToShow: 1,
-		});
-		});
+    		dots: true,
+ 		 	infinite: true,
+  			speed: 300,
+  			slidesToShow: 1,
+  			centerMode: true,
+  			centerPadding: '450px',
+    	});
+    });
     </script>
 </head>
 <body>
@@ -133,25 +131,22 @@
 
 			<div class="team-members">
 			
-				<div class="member-1">
-					<img src="images/ashley.jpg" alt="ashley" class="ashley">
+				<div class="member">
+					<img src="images/ashley.jpg" alt="ashley" class="img-team">
 					<h2 class="name">Ashley Taylor</h2>
 					<h3 class="designation">Senior Creative Designer</h3>
-					<img src="images/social.jpg" alt="social-btns">
 				</div>
 
-				<div class="member-2">
-					<img src="images/karen.jpg" alt="karen">
+				<div class="member">
+					<img src="images/karen.jpg" alt="karen" class="img-team">
 					<h2 class="name">Karen Peterson</h2>
 					<h3 class="designation">Chief Executive Officer</h3>
-					<img src="images/social.jpg" alt="social-btns">
 				</div>
 
-				<div class="member-3">
-					<img src="images/jennifer.jpg" alt="jennifer">
+				<div class="member">
+					<img src="images/jennifer.jpg" alt="jennifer" class="img-team">
 					<h2 class="name">Jennifer Jimenez</h2>
 					<h3 class="designation">Senior Mentor</h3>
-					<img src="images/social.jpg" alt="social-btns">
 				</div>
 		
 			</div>
@@ -202,10 +197,10 @@
 	            		<label class="form-label">Job Title*</label>
 		            	<input type="text" name="" class="form-input">
 	            			            		
-		            	<label class="form-label">Job Description</label>
+		            	<label class="form-label">Job Description*</label>
 		            	<input type="text" name="" class="form-input">
 		            	            	
-		          		<label class="form-label">Motivation to Register</label>
+		          		<label class="form-label">Motivation to Register*</label>
 		         		<input type="text" name="" class="form-input">
 	                    
 	                    <input type="submit" name="" class="register-button" value="Register">
