@@ -224,30 +224,34 @@
     padding-bottom: 6%;
 }
 .member{
+    width: 500px;
     background-color: white;
     padding-top: 40px;
     padding-bottom: 85px;
     background-color: white;
     border-radius: 15px;
     margin-left: 40px;
+}.social-media{
+    color: rgb(120, 40, 92);
 }
 .img-team{
-    margin-left: 220px;
     border-radius: 114px;
     width: 218px;
     height: 217px;
+    margin-left: 140px;
 }
-.name{
+.member-name{
     color: rgb(120, 40, 92);
     font-size: 2em;
     font-weight: 900;
     text-align: center;
-    padding-bottom: 2%;
+    padding: 2% 0;
 }
 .designation{
     color: rgb(120, 40, 92);
     font-size: 20px;
     font-weight: 500;
+    padding: 2% 0;    
     text-align: center;
 }   
 .contact-flex{
