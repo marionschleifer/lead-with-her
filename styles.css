@@ -6,6 +6,7 @@
     padding: 0px;
     margin: 0px;
 }
+/*---------------------------- Header ----------------------*/
 .header-section{
     background-image: url(images/get-background.jpg);
     height: 900px;
@@ -62,6 +63,7 @@
 .r-btn:hover{
     text-decoration: underline;
 }
+/*---------------------------- Get Started Section ----------------------*/
 .text-get-started{
     padding-top: 100px;
     padding-left: 100px;
@@ -100,6 +102,7 @@
 .get-btn:hover{
     text-decoration: underline;
 }
+/*---------------------------- About Us Section ----------------------*/
 .main-aboutus{
     display: flex;
     padding: 5%;
@@ -125,6 +128,7 @@
     color: #494949;
     margin-right: 18%;
 }
+/*---------------------------- Code of Conduct Section ----------------------*/
 .main-code{
     background-image: url(images/background-code.jpg);
     height: 962px;
@@ -163,6 +167,7 @@
     margin-right: 148px;
     margin-bottom: 60px;
 }
+/*---------------------------- Guidelines Section ----------------------*/
 .main-guidelines{
     display: flex;   
 }
@@ -202,6 +207,7 @@
     padding-right: 20%;
     padding-top: 4%;
 }
+/*---------------------------- Our Team Section ----------------------*/
 .our-team{
     background-image: url('images/team-background.jpg');
     height: 1000px;
@@ -224,21 +230,20 @@
     padding-bottom: 6%;
 }
 .member{
-    width: 500px;
+    width: 400px;
     background-color: white;
     padding-top: 40px;
-    padding-bottom: 85px;
+    padding-bottom: 50px;
     background-color: white;
     border-radius: 15px;
-    margin-left: 40px;
-}.social-media{
-    color: rgb(120, 40, 92);
+    margin-left: 125px;
+    outline: none;
 }
 .img-team{
     border-radius: 114px;
     width: 218px;
     height: 217px;
-    margin-left: 140px;
+    margin-left: 96px;
 }
 .member-name{
     color: rgb(120, 40, 92);
@@ -253,7 +258,35 @@
     font-weight: 500;
     padding: 2% 0;    
     text-align: center;
-}   
+}
+.slick-slide .social{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.slick-slide .twitter{
+    margin-left: 125px;
+}
+.slick-center{
+    background: linear-gradient(#702b61,#543b72);
+}
+.slick-slide{
+    transition: transform 0.5s; 
+}
+.slick-slide.slick-center{
+    transform: scale(1);
+}
+.slick-slide.slick-center .member-name{   
+    color: white;
+}
+.slick-slide.slick-center .designation{   
+    color: white;
+}
+.slick-slide.slick-center .social{
+    border-radius: 50px;
+    border: 2px solid white;
+}
+/*---------------------------- Contact Section ----------------------*/
 .contact-flex{
     display: flex;
     padding: 5%;
@@ -350,6 +383,7 @@
 .register-button:hover{
     text-decoration: underline;
 }
+/*---------------------------- Footer ----------------------*/
 .main-footer{
     padding-top: 5%;
 }
