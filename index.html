@@ -2,26 +2,74 @@
 <html lang="en">
 <head>
 	<title>LeadWithHer</title>
-	<link rel="stylesheet" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<script type="text/javascript" src="jquery/jquery.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://slick/slick-theme.css"/>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
+	<script type="text/javascript" src="slick/slick/slick.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
     <script type="text/javascript">
     	$(document).ready(function(){
+    			$(".about-us").click(function() {
+     			$('html, body').animate({
+         		scrollTop: $(".main-aboutus").offset().top
+     			}, 1500);
+ 			});	
+    		
+    		$(".home").click(function() {
+     			$('html, body').animate({
+         		scrollTop: $(".header-section").offset().top
+     			}, 1500);
+ 			});
+
+
+    		$(".coc").click(function() {
+     			$('html, body').animate({
+         		scrollTop: $(".main-code").offset().top
+     			}, 1500);
+			});
+
+    		$(".guide-lines").click(function() {
+     			$('html, body').animate({
+         		scrollTop: $(".main-guidelines").offset().top
+     			}, 1500);
+ 			});
+
+    		$(".team").click(function() {
+     			$('html, body').animate({
+         		scrollTop: $(".text-team").offset().top
+     			}, 1500);
+ 			});
+    		
+    		$(".r-btn").click(function() {
+     			$('html, body').animate({
+         		scrollTop: $(".contact").offset().top
+     			}, 1500);
+ 			});
+
+ 			$(".get-btn").click(function() {
+     			$('html, body').animate({
+         		scrollTop: $(".contact").offset().top
+     			}, 1500);
+ 			});
+
     	$('.team-members').slick({
-  centerMode: true,
-  centerPadding: '520px',
-  slidesToShow: 1,
-});
-});
+    		dots: true,
+ 		 	infinite: true,
+  			speed: 300,
+  			slidesToShow: 1,
+  			centerMode: true,
+  			autoplay: true,
+			autoplaySpeed: 2000,
+			variableWidth: true,
+  			centerPadding: '450px',
+  		
+    	});
+    });
     </script>
 </head>
 <body>
@@ -37,11 +85,11 @@
 		<nav class="nav-box">
 			<div class="nav-bar-box">
 				<ul class="nav-bar">
-					<li class="nav-bar-- nav-bar-"> <a class="nav-an" href="#">Home</a></li>
-					<li class="nav-bar--"> <a class="nav-an" href="#">About us</a></li>
-					<li class="nav-bar--"> <a class="nav-an" href="#">Code of Conduct</a></li>
-					<li class="nav-bar--"> <a class="nav-an" href="#">Guidelines</a></li>
-					<li class="nav-bar--"> <a class="nav-an" href="#">Team</a></li>
+					<li class="nav-bar-- nav-bar-"> <a class="nav-an" href="javascript:void(0)">Home</a></li>
+					<li class="nav-bar--"> <a class="nav-an about-us" href="javascript:void(0)">About us</a></li>
+					<li class="nav-bar--"> <a class="nav-an coc" href="javascript:void(0)">Code of Conduct</a></li>
+					<li class="nav-bar--"> <a class="nav-an guide-lines" href="javascript:void(0)">Guidelines</a></li>
+					<li class="nav-bar--"> <a class="nav-an team" href="javascript:void(0)">Team</a></li>
 					<li class="register-btn"><button class="r-btn">Register</button></li>
 				</ul>
 			</div>
@@ -92,9 +140,13 @@
 
 				<ul class="list-code">
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
+					
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
+					
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
+					
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
+					
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
 				</ul>
 			
@@ -129,25 +181,31 @@
 
 			<div class="team-members">
 			
-				<div class="member-1">
-					<img src="images/ashley.jpg" alt="ashley" class="ashley">
-					<h2 class="name">Ashley Taylor</h2>
+				<div class="member">
+					<img src="images/ashley.jpg" alt="ashley" class="img-team">
+					<h2 class="member-name">Ashley Taylor</h2>
 					<h3 class="designation">Senior Creative Designer</h3>
-					<img src="images/social.jpg" alt="social-btns">
+					<a href="https://www.twitter.com" target="_blank"><img src="images/twitter.jpg" class="social twitter"></a>
+					<a href="https://www.facebook.com" target="_blank"><img src="images/facebook.jpg" class="social"></a>
+					<a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.jpg" class="social"></a>
 				</div>
 
-				<div class="member-2">
-					<img src="images/karen.jpg" alt="karen">
-					<h2 class="name">Karen Peterson</h2>
+				<div class="member">
+					<img src="images/karen.jpg" alt="karen" class="img-team">
+					<h2 class="member-name">Karen Peterson</h2>
 					<h3 class="designation">Chief Executive Officer</h3>
-					<img src="images/social.jpg" alt="social-btns">
+					<a href="https://www.twitter.com" target="_blank"><img src="images/twitter.jpg" class="social twitter"></a>
+					<a href="https://www.facebook.com" target="_blank"><img src="images/facebook.jpg" class="social"></a>
+					<a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.jpg" class="social"></a>
 				</div>
 
-				<div class="member-3">
-					<img src="images/jennifer.jpg" alt="jennifer">
-					<h2 class="name">Jennifer Jimenez</h2>
+				<div class="member">
+					<img src="images/jennifer.jpg" alt="jennifer" class="img-team">
+					<h2 class="member-name">Jennifer Jimenez</h2>
 					<h3 class="designation">Senior Mentor</h3>
-					<img src="images/social.jpg" alt="social-btns">
+					<a href="https://www.twitter.com" target="_blank"><img src="images/twitter.jpg" class="social twitter"></a>
+					<a href="https://www.facebook.com" target="_blank"><img src="images/facebook.jpg" class="social"></a>
+					<a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.jpg" class="social"></a>
 				</div>
 		
 			</div>
@@ -155,57 +213,62 @@
 		</section>
 
 		<section class="contact">
+
+			<div class="contact-flex">
 			
-			<div class="main-register">
-				<h1 class="register-heading">Register Your Self</h1>
-				<p class="register-para">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				<div class="main-register">
+					<h1 class="register-heading">Register Your Self</h1>
+					<p class="register-para">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
 
-				<div class="sub-register">
-					<img src="images/be-mentor.jpg" alt="be-mentor" class="register-img">
-					<h2 class="register-text">I want to be a mentor</h2>
-				</div>
+					<div class="sub-register">
+						<img src="images/be-mentor.jpg" alt="be-mentor" class="register-img">
+						<h2 class="register-text">I want to be a mentor</h2>
+					</div>
 
-				<div class="sub-register">
-					<img src="images/want-mentor.jpg" alt="want-mentor" class="register-img">
-					<h2 class="register-text">I want a mentor</h2>
-				</div>
+					<div class="sub-register">
+						<img src="images/want-mentor.jpg" alt="want-mentor" class="register-img">
+						<h2 class="register-text">I want a mentor</h2>
+					</div>
 
-				<div class="sub-register">
-					<img src="images/general.jpg" alt="general" class="register-img">
-					<h2 class="register-text">General Qustions</h2>
-				</div>
+					<div class="sub-register">
+						<img src="images/general.jpg" alt="general" class="register-img">
+						<h2 class="register-text">General Questions</h2>
+					</div>
 
-            </div>
+	            </div>
 
-            <div class="form">
-            	
-            	<h1 class="form-heading">Fill The Form</h1>
+	            <div class="form">
+	            	
+	            	<h1 class="form-heading">Fill The Form</h1>
 
-            	<form method="post" action="#">
+	            	<form method="post" action="#">
 
-            		<input type="checkbox" name="">Register as a Mentee
-            		<input type="checkbox" name="">Register as a Mentor <br>
+	            		<input type="checkbox" name="" class="checkbox-1"><span class="mentee">Register as a Mentee</span>
+	            		<input type="checkbox" name="" class="checkbox-2"><span class="mentor">Register as a Mentor</span> 
 
-            		<label class="form-label">Name*</label><br>
-            		<input type="text" name="" class="form-input"><br>
-
-            		<label class="form-label">Email*</label><br>
-            		<input type="text" name="" class="form-input"><br>
-            		
-            		<label class="form-label">Job Title*</label><br>
-            		<input type="text" name="" class="form-input"><br>
-            		
-            		<label class="form-label">Job Description</label><br>
-            		<input type="text" name="" class="form-input"><br>
-
-            		<label class="form-label">Motivation to Register</label><br>
-            		<input type="text" name="" class="form-input"><br>
-                    
-                    <input type="submit" name="" class="register-button">
-            		
-            	</form>
-            
-            </div>
+	            		
+		            	<label class="form-label name">Name*</label>
+		            	<input type="text" name="" class="form-input">
+		               	
+		           		<label class="form-label">Email*</label>
+		           		<input type="text" name="" class="form-input">
+	            		
+	            		<label class="form-label">Job Title*</label>
+		            	<input type="text" name="" class="form-input">
+	            			            		
+		            	<label class="form-label">Job Description*</label>
+		            	<input type="text" name="" class="form-input">
+		            	            	
+		          		<label class="form-label">Motivation to Register*</label>
+		         		<input type="text" name="" class="form-input">
+	                    
+	                    <input type="submit" name="" class="register-button" value="Register">
+	            		
+	            	</form>
+	            
+	            </div>
+	        
+	        </div>
 
 		</section>
 
@@ -214,23 +277,30 @@
 	<footer>
 	
 		<div class="main-footer">
-		
-			<div class="logo">
-				<h1 class="logoname">LeadWithHer</h1>
 
-				<ul class="footer-links">
-					<li class="links"><a href="#">Home</a></li>
-					<li class="links"><a href="#">About Us</a></li>
-					<li class="links"><a href="#">Code of COnduct</a></li>
-					<li class="links"><a href="#">Guidelines</a></li>
-					<li class="links"><a href="#">Team</a></li>
-				</ul>
+			<div class="footer-links">
 		
+				<div class="footer-logo">
+					<h1 class="f-logo">LeadWithHer</h1>
+				</div>
+				
+				<div class="main-links">
+					<ul>
+						<li class="links"><a href="javascript:void(0)" class="footer-an home">Home</a></li>
+						<li class="links"><a href="javascript:void(0)" class="footer-an about-us">About Us</a></li>
+						<li class="links"><a href="javascript:void(0)" class="footer-an coc">Code of Conduct</a></li>
+						<li class="links"><a href="javascript:void(0)" class="footer-an guide-lines">Guidelines</a></li>
+						<li class="links"><a href="javascript:void(0)" class="footer-an team">Team</a></li>
+					</ul>
+				</div>
+
 			</div>
 
 			<div class="copyright">
-				<img src="images/social.jpg" alt="social-btns" class="footer-img">
-				<p>&copy;2019LeadWithHer <span>Inc.All rights reserved.</span></p>
+				<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<p class="end-line"><b>&copy;2019LeadWithHer</b> Inc.All rights reserved.</p>
 			</div>
 
     	</div>

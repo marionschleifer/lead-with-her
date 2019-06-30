@@ -1,5 +1,4 @@
-@import 
-    url('https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto&display=swap');
 *{
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
@@ -7,6 +6,7 @@
     padding: 0px;
     margin: 0px;
 }
+/*---------------------------- Header ----------------------*/
 .header-section{
     background-image: url(images/get-background.jpg);
     height: 900px;
@@ -32,10 +32,7 @@
     display: inline-block;
     list-style-type: none;
     color: white;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding: 7px 25px;
     margin-top: 5%;
     margin-left: 1%;
     border-radius: 20px;
@@ -55,10 +52,7 @@
    margin-left: 5%;
 }
 .r-btn{
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding: 7px 25px;
     font-size: 18px;
     font-family: Roboto, sans-serif;
     background-color: white;
@@ -69,6 +63,7 @@
 .r-btn:hover{
     text-decoration: underline;
 }
+/*---------------------------- Get Started Section ----------------------*/
 .text-get-started{
     padding-top: 100px;
     padding-left: 100px;
@@ -96,10 +91,7 @@
     text-align: center;
 }
 .get-btn{
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding: 7px 25px;
     font-size: 18px;
     font-family: Roboto, sans-serif;
     background-color: white;
@@ -110,6 +102,7 @@
 .get-btn:hover{
     text-decoration: underline;
 }
+/*---------------------------- About Us Section ----------------------*/
 .main-aboutus{
     display: flex;
     padding: 5%;
@@ -126,7 +119,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 3em;
     color: rgb(120, 40, 92);
-    font-weight: 900, bolder;
+    font-weight: 900;
     padding-bottom: 5%;
 }
 .para-aboutus{
@@ -135,6 +128,7 @@
     color: #494949;
     margin-right: 18%;
 }
+/*---------------------------- Code of Conduct Section ----------------------*/
 .main-code{
     background-image: url(images/background-code.jpg);
     height: 962px;
@@ -151,7 +145,6 @@
 .subheading-code{
     text-align: center;
     font-weight: lighter;
-    text-align: center;
     margin-right: 26%;
     margin-left: 25%;
     padding-bottom: 3%;
@@ -174,6 +167,7 @@
     margin-right: 148px;
     margin-bottom: 60px;
 }
+/*---------------------------- Guidelines Section ----------------------*/
 .main-guidelines{
     display: flex;   
 }
@@ -197,24 +191,259 @@
 }
 .download{
     margin-left: 15%;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding: 7px 25px;
     font-size: 18px;
     font-family: Roboto, sans-serif;
     background: linear-gradient(to top, #3c1053, #ad5389);
     color: white;
     font-weight: 900;
     border-radius: 20px;
-
+}
+.download:hover{
+    text-decoration: underline;
 }
 .img-guide{
     float: left;
     padding-right: 20%;
     padding-top: 4%;
 }
+/*---------------------------- Our Team Section ----------------------*/
 .our-team{
     background-image: url('images/team-background.jpg');
     height: 1000px;
+}
+.heading-team{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    font-size: 4em;
+    color: white;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+.para-team{
+    text-align: center;
+    font-size: 23px;
+    color: white;
+    font-weight: 200;
+    margin: 0 25%;
+    padding-bottom: 6%;
+}
+.member{
+    width: 400px;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 125px;
+    outline: none;
+}
+.img-team{
+    border-radius: 114px;
+    width: 218px;
+    height: 217px;
+    margin-left: 96px;
+}
+.member-name{
+    color: rgb(120, 40, 92);
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    padding: 2% 0;
+}
+.designation{
+    color: rgb(120, 40, 92);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 2% 0;    
+    text-align: center;
+}
+.slick-slide .social{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.slick-slide .twitter{
+    margin-left: 125px;
+}
+.slick-center{
+    background: linear-gradient(#702b61,#543b72);
+}
+.slick-slide{
+    transition: transform 0.5s; 
+}
+.slick-slide.slick-center{
+    transform: scale(1);
+}
+.slick-slide.slick-center .member-name{   
+    color: white;
+}
+.slick-slide.slick-center .designation{   
+    color: white;
+}
+.slick-slide.slick-center .social{
+    border-radius: 50px;
+    border: 2px solid white;
+}
+/*---------------------------- Contact Section ----------------------*/
+.contact-flex{
+    display: flex;
+    padding: 5%;
+}
+.main-register{
+    width: 100%;
+    padding-top: 7%;
+}
+.register-heading{
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(120, 40, 92);
+    font-weight: 900;
+    margin-left: 5%;
+}
+.register-para{
+    text-align: justify;
+    padding: 5% 0;
+    margin-right: 15%;
+    margin-left: 5%;
+    color: #6e6e6e;
+    font-size: 20px;
+    font-weight: 500;
+}
+.register-img{
+    clear: both;
+    float: left;
+    border-radius: 53px;
+    margin-left: 5%;
+}
+.sub-register{
+    padding-top: 5%;
+}
+.register-text{
+    margin-left: 21%;
+    margin-top: 30px;
+    text-align: left;
+}
+.form{
+    width: 100%;
+    height: 850px;
+    box-shadow: 0px 0px 20px 15px #8080800d;
+}
+.form-heading{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: rgb(120, 40, 92);
+    font-size: 2em;
+    padding-top: 5%;
+    margin-left: 5%;
+}
+.checkbox-1{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.checkbox-2{
+    margin-left: 17%;
+}
+.mentee, .mentor{
+    margin-left: 2%;
+    font-size: 18px;
+    font-weight: 700;
+}
+.form-label{
+    margin-left: 5%;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+}
+.form-input{
+    width: 90%;
+    padding: 17px 0;
+    border: 1px solid #80808042;
+    border-radius: 27px;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.name{
+    margin-top: 5%;
+}
+.register-button{
+    margin-top: 4%;
+    margin-left: 5%;
+    display: block;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+    background: linear-gradient(to top, #3c1053, #ad5389);
+    color: white;
+    font-weight: 900;
+    border-radius: 35px;
+}
+.register-button:hover{
+    text-decoration: underline;
+}
+/*---------------------------- Footer ----------------------*/
+.main-footer{
+    padding-top: 5%;
+}
+.footer-links{
+    height: 125px;
+    border-top: 1px solid #00000021;
+    display: flex;
+}
+.footer-logo{
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.f-logo{
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: rgb(120, 40, 92);
+}
+.main-links{
+    width: 70%;
+}
+.links{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 8%;
+    margin-top: 5%;
+}
+.footer-an{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #6e6e6e;
+}
+.footer-an:hover{
+    color: rgb(120, 40, 92);
+}
+.copyright{
+    height: 125px;
+    background: linear-gradient(to top, #3c1053, #ad5389);
+}
+.footer-img{
+    clear: both;
+    float: left;
+}
+.fab{
+    color: white;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: 38px;
+    margin-left: 1%;
+}
+.fa-facebook{
+    margin-left: 5%;
+}
+.end-line{
+    float: right;
+    margin-right: 7%;
+    margin-top: 45px;
+    color: white;
+    font-size: 20px;
 }
