@@ -58,12 +58,15 @@
  			});
 
     	$('.team-members').slick({
-    		dots: true,
+    		dots:false,
+        	arrows:true,
+        	nextArrow:'<img src="images/next.png" class="arrow_next">',
+        	prevArrow:'<img src="images/prev.png" class="arrow_prev">',
  		 	infinite: true,
   			speed: 300,
   			slidesToShow: 1,
   			centerMode: true,
-  			autoplay: true,
+  			//autoplay: true,
 			autoplaySpeed: 2000,
 			variableWidth: true,
   			centerPadding: '450px',
@@ -132,11 +135,11 @@
 		</section>
 
 
-		<section class="code-of-conduct">
+		<section class="guidelines">
 			
-			<div class="main-code">
-				<h2 class="heading-code">Code Of Conduct</h2>
-				<h3 class="subheading-code">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</h3>
+			<div class="main-guidelines">
+				<h2 class="heading-guide">Guidelines</h2>
+				<h3 class="subheading-guide">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</h3>
 
 				<ul class="list-code">
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
@@ -154,18 +157,18 @@
 		
 		</section>
 
-		<section class="guidelines">
+		<section class="code-of-conduct">
 			
-			<div class="main-guidelines">
+			<div class="main-code">
 
-				<div class="text-guidelines">
-					<h2 class="heading-guidelines">Guidelines</h2>
-					<p class="para-guidelines">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				<div class="text-code">
+					<h2 class="heading-code">Code of Conduct</h2>
+					<p class="para-code">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
 					<button class="download"><i class="fas fa-download"></i> &nbsp;Download Our Guidelines</button>
 				</div>
 
-				<div class="img-guide">
-					<img src="images/guidelines.jpg" alt="guidelines">
+				<div class="img-code">
+					<img src="images/guidelines.jpg" alt="code-of-conduct">
 				</div>
 
 			</div>
@@ -297,6 +300,7 @@
 			</div>
 
 			<div class="copyright">
+				<p></p>
 				<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
 				<a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
 				<a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>

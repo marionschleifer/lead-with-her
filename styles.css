@@ -14,7 +14,7 @@
 .logoname{
     font-size: 2em;
     position: absolute;
-    top: 75px;
+    margin-top: 5%;
     left: 5%;
     color: white;
     font-family: Roboto, sans-serif;
@@ -49,6 +49,7 @@
 .register-btn{
    display: inline-block;
    list-style-type: none;
+   margin-top: 5%;
    margin-left: 5%;
 }
 .r-btn{
@@ -128,21 +129,21 @@
     color: #494949;
     margin-right: 18%;
 }
-/*---------------------------- Code of Conduct Section ----------------------*/
-.main-code{
+/*---------------------------- Guidelines Section ----------------------*/
+.main-guidelines{
     background-image: url(images/background-code.jpg);
     height: 962px;
     padding: 5%;
 }
-.heading-code{
+.heading-guide{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 3em;
     color: white;
     font-weight: 900, bolder;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 }
-.subheading-code{
+.subheading-guide{
     text-align: center;
     font-weight: lighter;
     margin-right: 26%;
@@ -168,10 +169,10 @@
     margin-bottom: 60px;
 }
 /*---------------------------- Guidelines Section ----------------------*/
-.main-guidelines{
+.main-code{
     display: flex;   
 }
-.heading-guidelines{
+.heading-code{
     text-align: justify;
     margin-left: 15%;
     padding-top: 10%;
@@ -179,7 +180,7 @@
     font-size: 3em;
     font-family: 'Roboto', sans-serif;
 }
-.para-guidelines{
+.para-code{
     text-align: justify;
     margin-left: 15%;
     padding-top: 5%;
@@ -202,7 +203,7 @@
 .download:hover{
     text-decoration: underline;
 }
-.img-guide{
+.img-code{
     float: left;
     padding-right: 20%;
     padding-top: 4%;
@@ -236,7 +237,7 @@
     padding-bottom: 50px;
     background-color: white;
     border-radius: 15px;
-    margin-left: 125px;
+    margin-left: 110px;
     outline: none;
 }
 .img-team{
@@ -285,6 +286,17 @@
 .slick-slide.slick-center .social{
     border-radius: 50px;
     border: 2px solid white;
+}
+.arrow_next{
+    position: absolute;
+    bottom: 50%;
+    right: 0px;
+    z-index: 99;
+}
+.arrow_prev{
+    position: absolute;
+    bottom: 50%;
+    z-index: 99;
 }
 /*---------------------------- Contact Section ----------------------*/
 .contact-flex{
@@ -394,7 +406,7 @@
 }
 .footer-logo{
     width: 40%;
-    margin-top: 2%;
+    margin-top: 37px;
     margin-left: 5%;
 }
 .f-logo{
@@ -443,7 +455,7 @@
 .end-line{
     float: right;
     margin-right: 7%;
-    margin-top: 45px;
+    margin-top: 47px;
     color: white;
     font-size: 20px;
 }
