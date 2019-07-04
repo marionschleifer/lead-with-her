@@ -192,13 +192,14 @@
 }
 .download{
     margin-left: 15%;
-    padding: 7px 25px;
+    padding: 9px 25px;
     font-size: 18px;
     font-family: Roboto, sans-serif;
     background: linear-gradient(to top, #3c1053, #ad5389);
     color: white;
     font-weight: 900;
     border-radius: 20px;
+    text-decoration: none;
 }
 .download:hover{
     text-decoration: underline;
@@ -354,10 +355,10 @@
     margin-left: 5%;
     margin-top: 5%;
 }
-.checkbox-2{
-    margin-left: 17%;
+.checkbox-2, .checkbox-3{
+    margin-left: 4%;
 }
-.mentee, .mentor{
+.mentee, .mentor, .question{
     margin-left: 2%;
     font-size: 18px;
     font-weight: 700;

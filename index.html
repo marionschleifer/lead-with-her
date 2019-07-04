@@ -70,9 +70,51 @@
 			autoplaySpeed: 2000,
 			variableWidth: true,
   			centerPadding: '450px',
-  		
-    	});
+  		});
+
+  		$("#register").click(function(e) {
+   		e.preventDefault();
+	      var mentee = $('#mentee').val();
+	      var mentor = $('#mentor').val();
+	      var question = $('#question').val();
+	      var name = $('#name').val();
+	      var email = $('#email').val();
+	      var jobTitle = $('#job-title').val();
+	      var jobDes = $('#job-des').val();
+	      var motivation = $('#motivation').val();
+
+        $.ajax({
+
+        type: "POST",
+
+        url: "ajax.php",
+
+        dataType: "html",
+
+        data: {
+         		mentee : mentee,
+     			mentor : mentor,
+             	question : question,
+             	name : name,
+             	email : email,
+             	jobTitle : jobTitle,
+             	jobDes : jobDes,
+             	motivation : motivation,
+               },
+
+        success: function (response) {
+            if (response.length) {
+                     alert ('Email Sent');
+               }               
+            },
+        error: function (jqXHR, textStatus, errorThrown) {
+                console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+            }  
+
+        });
+        return false;
     });
+});
     </script>
 </head>
 <body>
@@ -90,8 +132,8 @@
 				<ul class="nav-bar">
 					<li class="nav-bar-- nav-bar-"> <a class="nav-an" href="javascript:void(0)">Home</a></li>
 					<li class="nav-bar--"> <a class="nav-an about-us" href="javascript:void(0)">About us</a></li>
-					<li class="nav-bar--"> <a class="nav-an coc" href="javascript:void(0)">Code of Conduct</a></li>
 					<li class="nav-bar--"> <a class="nav-an guide-lines" href="javascript:void(0)">Guidelines</a></li>
+					<li class="nav-bar--"> <a class="nav-an coc" href="javascript:void(0)">Code of Conduct</a></li>
 					<li class="nav-bar--"> <a class="nav-an team" href="javascript:void(0)">Team</a></li>
 					<li class="register-btn"><button class="r-btn">Register</button></li>
 				</ul>
@@ -164,7 +206,7 @@
 				<div class="text-code">
 					<h2 class="heading-code">Code of Conduct</h2>
 					<p class="para-code">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-					<button class="download"><i class="fas fa-download"></i> &nbsp;Download Our Guidelines</button>
+					<a class="download" href="sana.pdf" download="sana.pdf" target="_blank"><i class="fas fa-download"></i> &nbsp;Download</a>
 				</div>
 
 				<div class="img-code">
@@ -246,26 +288,26 @@
 
 	            	<form method="post" action="#">
 
-	            		<input type="checkbox" name="" class="checkbox-1"><span class="mentee">Register as a Mentee</span>
-	            		<input type="checkbox" name="" class="checkbox-2"><span class="mentor">Register as a Mentor</span> 
-
+	            		<input type="checkbox" id="mentee" class="checkbox-1"><span class="mentee">Register as a Mentee</span>
+	            		<input type="checkbox" id="mentor" class="checkbox-2"><span class="mentor">Register as a Mentor</span> 
+	            		<input type="checkbox" id="question" class="checkbox-3"><span class="question">Ask a Question</span> 
 	            		
 		            	<label class="form-label name">Name*</label>
-		            	<input type="text" name="" class="form-input">
+		            	<input type="text" id="name" class="form-input">
 		               	
 		           		<label class="form-label">Email*</label>
-		           		<input type="text" name="" class="form-input">
+		           		<input type="text" id="email" class="form-input">
 	            		
 	            		<label class="form-label">Job Title*</label>
-		            	<input type="text" name="" class="form-input">
+		            	<input type="text" id="job-title" class="form-input">
 	            			            		
 		            	<label class="form-label">Job Description*</label>
-		            	<input type="text" name="" class="form-input">
+		            	<input type="text" id="job-des" class="form-input">
 		            	            	
 		          		<label class="form-label">Motivation to Register*</label>
-		         		<input type="text" name="" class="form-input">
+		         		<input type="text" id="motivation" class="form-input">
 	                    
-	                    <input type="submit" name="" class="register-button" value="Register">
+	                    <input type="submit" id="register" class="register-button" value="Register">
 	            		
 	            	</form>
 	            
@@ -291,8 +333,8 @@
 					<ul>
 						<li class="links"><a href="javascript:void(0)" class="footer-an home">Home</a></li>
 						<li class="links"><a href="javascript:void(0)" class="footer-an about-us">About Us</a></li>
-						<li class="links"><a href="javascript:void(0)" class="footer-an coc">Code of Conduct</a></li>
 						<li class="links"><a href="javascript:void(0)" class="footer-an guide-lines">Guidelines</a></li>
+						<li class="links"><a href="javascript:void(0)" class="footer-an coc">Code of Conduct</a></li>
 						<li class="links"><a href="javascript:void(0)" class="footer-an team">Team</a></li>
 					</ul>
 				</div>
@@ -300,7 +342,6 @@
 			</div>
 
 			<div class="copyright">
-				<p></p>
 				<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
 				<a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
 				<a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
