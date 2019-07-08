@@ -60,6 +60,7 @@
     color: rgb(120, 40, 92);
     font-weight: 900;
     border-radius: 20px;
+    outline: none;
 }
 .r-btn:hover{
     text-decoration: underline;
@@ -99,6 +100,7 @@
     color: rgb(120, 40, 92);
     font-weight: 900;
     border-radius: 20px;
+    outline: none;
 }
 .get-btn:hover{
     text-decoration: underline;
@@ -371,12 +373,14 @@
 }
 .form-input{
     width: 90%;
-    padding: 17px 0;
+    padding: 17px 12px;
     border: 1px solid #80808042;
     border-radius: 27px;
     margin-left: 5%;
     margin-top: 2%;
     margin-bottom: 2%;
+    outline: none;
+    font-size: 16px;
 }
 .name{
     margin-top: 5%;
@@ -392,6 +396,7 @@
     color: white;
     font-weight: 900;
     border-radius: 35px;
+    outline: none;
 }
 .register-button:hover{
     text-decoration: underline;

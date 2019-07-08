@@ -73,47 +73,46 @@
   		});
 
   		$("#register").click(function(e) {
-   		e.preventDefault();
-	      var mentee = $('#mentee').val();
-	      var mentor = $('#mentor').val();
-	      var question = $('#question').val();
-	      var name = $('#name').val();
-	      var email = $('#email').val();
-	      var jobTitle = $('#job-title').val();
-	      var jobDes = $('#job-des').val();
-	      var motivation = $('#motivation').val();
+  		  	e.preventDefault();
+         	var myCheckboxes = new Array();
+
+	        $("input:checked").each(function() {
+	           myCheckboxes.push($(this).val());
+	        });
+
+		    var formData = {
+		    	'name' : $('#name').val(),
+		    	'email' : $('#email').val(),
+		    	'jobTitle' : $('#job-title').val(),
+	        	'jobDes' : $('#job-des').val(),
+            	'motivation' : $('#motivation').val(),
+            	'checkbox': myCheckboxes,
+		    }
 
         $.ajax({
 
-        type: "POST",
+            type: "POST",
 
-        url: "ajax.php",
+            url: "ajax.php",
 
-        dataType: "html",
-
-        data: {
-         		mentee : mentee,
-     			mentor : mentor,
-             	question : question,
-             	name : name,
-             	email : email,
-             	jobTitle : jobTitle,
-             	jobDes : jobDes,
-             	motivation : motivation,
+            data: {
+            		formData,
                },
 
-        success: function (response) {
+            success: function (response) {
             if (response.length) {
-                     alert ('Email Sent');
+            	   $('.myform').hide();
+            	   $('.form-heading').hide();
+                   $('#sent').html("Thank You for Registering! We will get back to you soon.").css({'color':'rgb(120,40,92)','display':'block','margin-left':'5%','margin-top':'40%','font-size':'2em','font-weight': '700','text-align': 'center'});
                }               
             },
-        error: function (jqXHR, textStatus, errorThrown) {
+            error: function (jqXHR, textStatus, errorThrown) {
                 console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
             }  
 
-        });
-        return false;
-    });
+            });
+    	return false;
+   });
 });
     </script>
 </head>
@@ -286,11 +285,13 @@
 	            	
 	            	<h1 class="form-heading">Fill The Form</h1>
 
-	            	<form method="post" action="#">
+	            	<span id="sent"></span>
 
-	            		<input type="checkbox" id="mentee" class="checkbox-1"><span class="mentee">Register as a Mentee</span>
-	            		<input type="checkbox" id="mentor" class="checkbox-2"><span class="mentor">Register as a Mentor</span> 
-	            		<input type="checkbox" id="question" class="checkbox-3"><span class="question">Ask a Question</span> 
+	            	<form method="post" action="#" class="myform">
+
+	            		<input type="checkbox" id="check" name="checkbox[]" value="Mentee" class="checkbox-1"><span class="mentee">Register as a Mentee</span>
+	            		<input type="checkbox" id="check" name="checkbox[]" value="Mentor" class="checkbox-2"><span class="mentor">Register as a Mentor</span> 
+	            		<input type="checkbox" id="check" name="checkbox[]" value="Question" class="checkbox-3"><span class="question">Ask a Question</span> 
 	            		
 		            	<label class="form-label name">Name*</label>
 		            	<input type="text" id="name" class="form-input">
@@ -307,7 +308,7 @@
 		          		<label class="form-label">Motivation to Register*</label>
 		         		<input type="text" id="motivation" class="form-input">
 	                    
-	                    <input type="submit" id="register" class="register-button" value="Register">
+	                    <input type="button" id="register" class="register-button" value="Register">
 	            		
 	            	</form>
 	            
