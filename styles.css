@@ -14,7 +14,7 @@
 .logoname{
     font-size: 2em;
     position: absolute;
-    top: 75px;
+    margin-top: 5%;
     left: 5%;
     color: white;
     font-family: Roboto, sans-serif;
@@ -49,6 +49,7 @@
 .register-btn{
    display: inline-block;
    list-style-type: none;
+   margin-top: 5%;
    margin-left: 5%;
 }
 .r-btn{
@@ -59,6 +60,7 @@
     color: rgb(120, 40, 92);
     font-weight: 900;
     border-radius: 20px;
+    outline: none;
 }
 .r-btn:hover{
     text-decoration: underline;
@@ -98,6 +100,7 @@
     color: rgb(120, 40, 92);
     font-weight: 900;
     border-radius: 20px;
+    outline: none;
 }
 .get-btn:hover{
     text-decoration: underline;
@@ -128,21 +131,21 @@
     color: #494949;
     margin-right: 18%;
 }
-/*---------------------------- Code of Conduct Section ----------------------*/
-.main-code{
+/*---------------------------- Guidelines Section ----------------------*/
+.main-guidelines{
     background-image: url(images/background-code.jpg);
     height: 962px;
     padding: 5%;
 }
-.heading-code{
+.heading-guide{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 3em;
     color: white;
     font-weight: 900, bolder;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 }
-.subheading-code{
+.subheading-guide{
     text-align: center;
     font-weight: lighter;
     margin-right: 26%;
@@ -168,10 +171,10 @@
     margin-bottom: 60px;
 }
 /*---------------------------- Guidelines Section ----------------------*/
-.main-guidelines{
+.main-code{
     display: flex;   
 }
-.heading-guidelines{
+.heading-code{
     text-align: justify;
     margin-left: 15%;
     padding-top: 10%;
@@ -179,7 +182,7 @@
     font-size: 3em;
     font-family: 'Roboto', sans-serif;
 }
-.para-guidelines{
+.para-code{
     text-align: justify;
     margin-left: 15%;
     padding-top: 5%;
@@ -191,18 +194,19 @@
 }
 .download{
     margin-left: 15%;
-    padding: 7px 25px;
+    padding: 9px 25px;
     font-size: 18px;
     font-family: Roboto, sans-serif;
     background: linear-gradient(to top, #3c1053, #ad5389);
     color: white;
     font-weight: 900;
     border-radius: 20px;
+    text-decoration: none;
 }
 .download:hover{
     text-decoration: underline;
 }
-.img-guide{
+.img-code{
     float: left;
     padding-right: 20%;
     padding-top: 4%;
@@ -236,7 +240,7 @@
     padding-bottom: 50px;
     background-color: white;
     border-radius: 15px;
-    margin-left: 125px;
+    margin-left: 110px;
     outline: none;
 }
 .img-team{
@@ -285,6 +289,17 @@
 .slick-slide.slick-center .social{
     border-radius: 50px;
     border: 2px solid white;
+}
+.arrow_next{
+    position: absolute;
+    bottom: 50%;
+    right: 0px;
+    z-index: 99;
+}
+.arrow_prev{
+    position: absolute;
+    bottom: 50%;
+    z-index: 99;
 }
 /*---------------------------- Contact Section ----------------------*/
 .contact-flex{
@@ -342,10 +357,10 @@
     margin-left: 5%;
     margin-top: 5%;
 }
-.checkbox-2{
-    margin-left: 17%;
+.checkbox-2, .checkbox-3{
+    margin-left: 4%;
 }
-.mentee, .mentor{
+.mentee, .mentor, .question{
     margin-left: 2%;
     font-size: 18px;
     font-weight: 700;
@@ -358,12 +373,14 @@
 }
 .form-input{
     width: 90%;
-    padding: 17px 0;
+    padding: 17px 12px;
     border: 1px solid #80808042;
     border-radius: 27px;
     margin-left: 5%;
     margin-top: 2%;
     margin-bottom: 2%;
+    outline: none;
+    font-size: 16px;
 }
 .name{
     margin-top: 5%;
@@ -379,6 +396,7 @@
     color: white;
     font-weight: 900;
     border-radius: 35px;
+    outline: none;
 }
 .register-button:hover{
     text-decoration: underline;
@@ -394,7 +412,7 @@
 }
 .footer-logo{
     width: 40%;
-    margin-top: 2%;
+    margin-top: 37px;
     margin-left: 5%;
 }
 .f-logo{
@@ -443,7 +461,7 @@
 .end-line{
     float: right;
     margin-right: 7%;
-    margin-top: 45px;
+    margin-top: 47px;
     color: white;
     font-size: 20px;
 }
