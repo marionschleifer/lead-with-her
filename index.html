@@ -4,22 +4,22 @@
 	<title>LeadWithHer</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<script
-  	src="https://code.jquery.com/jquery-3.4.1.min.js"
-  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  	crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
 	<script type="text/javascript" src="slick/slick/slick.min.js"></script>
 	<link rel="stylesheet" href="styles.css">
     <script type="text/javascript">
     	$(document).ready(function(){
-    			$(".about-us").click(function() {
-     			$('html, body').animate({
-         		scrollTop: $(".main-aboutus").offset().top
-     			}, 1500);
- 			});	
-    		
+			$(".about-us").click(function() {
+	 			$('html, body').animate({
+	     		scrollTop: $(".main-aboutus").offset().top
+	 			}, 1500);
+ 			});
+
     		$(".home").click(function() {
      			$('html, body').animate({
          		scrollTop: $(".header-section").offset().top
@@ -44,7 +44,7 @@
          		scrollTop: $(".text-team").offset().top
      			}, 1500);
  			});
-    		
+
     		$(".r-btn").click(function() {
      			$('html, body').animate({
          		scrollTop: $(".contact").offset().top
@@ -72,8 +72,8 @@
   			centerPadding: '450px',
   		});
 
-  		$("#register").click(function(e) {
-  		  	e.preventDefault();
+  		$("#register").click(function() {
+
          	var myCheckboxes = new Array();
 
 	        $("input:checked").each(function() {
@@ -88,6 +88,11 @@
             	'motivation' : $('#motivation').val(),
             	'checkbox': myCheckboxes,
 		    }
+
+		    if (formData['name'] == "" || formData['email'] == "" || formData['jobTitle'] == "" || formData['jobDes'] == "" || formData['motivation'] == "" || formData['checkbox'] == "") {
+		    	$('#error').html('Please fill all the fields to Register!').css({'color':'red','display':'block','margin-left':'5%', 'font-size' : '20px'});
+
+		    }else{
 
         $.ajax({
 
@@ -104,13 +109,14 @@
             	   $('.myform').hide();
             	   $('.form-heading').hide();
                    $('#sent').html("Thank You for Registering! We will get back to you soon.").css({'color':'rgb(120,40,92)','display':'block','margin-left':'5%','margin-top':'40%','font-size':'2em','font-weight': '700','text-align': 'center'});
-               }               
+               }
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
-            }  
+            }
 
             });
+    }
     	return false;
    });
 });
@@ -118,15 +124,45 @@
 </head>
 <body>
 
-	<div class="header-section">
+	<div class="container-fluid header-section">
 
  	<header>
 
-		<div class="logo">
-			<h1 class="logoname">LeadWithHer</h1>
-		</div>
+		<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">LeadWithHer</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-		<nav class="nav-box">
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link about-us" href="#">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link guide-lines" href="#">Guidelines</a>
+      </li>
+			<li class="nav-item">
+        <a class="nav-link coc" href="#">Code of Conduct</a>
+      </li>
+			<li class="nav-item">
+        <a class="nav-link team" href="#">Team</a>
+      </li>
+			<li class="nav-item">
+        <a class="nav-link r-btn" href="#">Register</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+	<!--	<nav class="navbar">
+			<h1 class="navbar-brand">LeadWithHer</h1>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 			<div class="nav-bar-box">
 				<ul class="nav-bar">
 					<li class="nav-bar-- nav-bar-"> <a class="nav-an" href="javascript:void(0)">Home</a></li>
@@ -137,14 +173,14 @@
 					<li class="register-btn"><button class="r-btn">Register</button></li>
 				</ul>
 			</div>
-		</nav>
-		
+		</nav>-->
+
 	</header>
 
 	<main>
-		
+
 		<section class="get-started">
-			
+
 			<div class="text-get-started">
 				<h1 class="text-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
 				<h2 class="text-two">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</h2>
@@ -159,9 +195,9 @@
 	</div>
 
 		<section class="aboutus">
-			
+
 			<div class="main-aboutus">
-				
+
 				<div class="img-aboutus">
 					<img src="images/aboutus.jpg" alt="aboutus">
 				</div>
@@ -177,29 +213,29 @@
 
 
 		<section class="guidelines">
-			
+
 			<div class="main-guidelines">
 				<h2 class="heading-guide">Guidelines</h2>
 				<h3 class="subheading-guide">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</h3>
 
 				<ul class="list-code">
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
-					
+
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
-					
+
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
-					
+
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
-					
+
 					<i class="far fa-check-circle"></i><li class="points">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</li>
 				</ul>
-			
+
 			</div>
-		
+
 		</section>
 
 		<section class="code-of-conduct">
-			
+
 			<div class="main-code">
 
 				<div class="text-code">
@@ -213,18 +249,18 @@
 				</div>
 
 			</div>
-		
+
 		</section>
 
 		<section class="our-team">
-			
+
 			<div class="text-team">
 				<h2 class="heading-team">Our Team</h2>
 				<p class="para-team">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
 			</div>
 
 			<div class="team-members">
-			
+
 				<div class="member">
 					<img src="images/ashley.jpg" alt="ashley" class="img-team">
 					<h2 class="member-name">Ashley Taylor</h2>
@@ -251,7 +287,7 @@
 					<a href="https://www.facebook.com" target="_blank"><img src="images/facebook.jpg" class="social"></a>
 					<a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.jpg" class="social"></a>
 				</div>
-		
+
 			</div>
 
 		</section>
@@ -259,7 +295,7 @@
 		<section class="contact">
 
 			<div class="contact-flex">
-			
+
 				<div class="main-register">
 					<h1 class="register-heading">Register Your Self</h1>
 					<p class="register-para">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
@@ -282,38 +318,40 @@
 	            </div>
 
 	            <div class="form">
-	            	
+
 	            	<h1 class="form-heading">Fill The Form</h1>
+
+	            	<span id="error"></span>
 
 	            	<span id="sent"></span>
 
 	            	<form method="post" action="#" class="myform">
 
 	            		<input type="checkbox" id="check" name="checkbox[]" value="Mentee" class="checkbox-1"><span class="mentee">Register as a Mentee</span>
-	            		<input type="checkbox" id="check" name="checkbox[]" value="Mentor" class="checkbox-2"><span class="mentor">Register as a Mentor</span> 
-	            		<input type="checkbox" id="check" name="checkbox[]" value="Question" class="checkbox-3"><span class="question">Ask a Question</span> 
-	            		
+	            		<input type="checkbox" id="check" name="checkbox[]" value="Mentor" class="checkbox-2"><span class="mentor">Register as a Mentor</span>
+	            		<input type="checkbox" id="check" name="checkbox[]" value="Question" class="checkbox-3"><span class="question">Ask a Question</span>
+
 		            	<label class="form-label name">Name*</label>
 		            	<input type="text" id="name" class="form-input">
-		               	
+
 		           		<label class="form-label">Email*</label>
 		           		<input type="text" id="email" class="form-input">
-	            		
+
 	            		<label class="form-label">Job Title*</label>
 		            	<input type="text" id="job-title" class="form-input">
-	            			            		
+
 		            	<label class="form-label">Job Description*</label>
 		            	<input type="text" id="job-des" class="form-input">
-		            	            	
+
 		          		<label class="form-label">Motivation to Register*</label>
 		         		<input type="text" id="motivation" class="form-input">
-	                    
+
 	                    <input type="button" id="register" class="register-button" value="Register">
-	            		
+
 	            	</form>
-	            
+
 	            </div>
-	        
+
 	        </div>
 
 		</section>
@@ -321,15 +359,15 @@
 	</main>
 
 	<footer>
-	
+
 		<div class="main-footer">
 
 			<div class="footer-links">
-		
+
 				<div class="footer-logo">
 					<h1 class="f-logo">LeadWithHer</h1>
 				</div>
-				
+
 				<div class="main-links">
 					<ul>
 						<li class="links"><a href="javascript:void(0)" class="footer-an home">Home</a></li>

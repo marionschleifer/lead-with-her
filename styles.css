@@ -3,6 +3,7 @@
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
     overflow-x: hidden;
+    background-size: cover;
     padding: 0px;
     margin: 0px;
 }
@@ -10,6 +11,24 @@
 .header-section{
     background-image: url(images/get-background.jpg);
     height: 900px;
+}
+ul{
+  margin-left: 30%;
+}
+.navbar-light .navbar-brand {
+    color: white;
+    font-size: 2em;
+    margin: 3% 3%;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    float: right;
+    padding: 7px 25px;
+    border-radius: 20px;
+}
+.navbar-light .navbar-toggler {
+    color: white;
+    border-color: white;
 }
 .logoname{
     font-size: 2em;
@@ -172,7 +191,7 @@
 }
 /*---------------------------- Guidelines Section ----------------------*/
 .main-code{
-    display: flex;   
+    display: flex;
 }
 .heading-code{
     text-align: justify;
@@ -260,7 +279,7 @@
     color: rgb(120, 40, 92);
     font-size: 20px;
     font-weight: 500;
-    padding: 2% 0;    
+    padding: 2% 0;
     text-align: center;
 }
 .slick-slide .social{
@@ -275,15 +294,15 @@
     background: linear-gradient(#702b61,#543b72);
 }
 .slick-slide{
-    transition: transform 0.5s; 
+    transition: transform 0.5s;
 }
 .slick-slide.slick-center{
     transform: scale(1);
 }
-.slick-slide.slick-center .member-name{   
+.slick-slide.slick-center .member-name{
     color: white;
 }
-.slick-slide.slick-center .designation{   
+.slick-slide.slick-center .designation{
     color: white;
 }
 .slick-slide.slick-center .social{
