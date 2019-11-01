@@ -8,6 +8,10 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
 	<script type="text/javascript" src="slick/slick/slick.min.js"></script>
@@ -129,34 +133,34 @@
  	<header>
 
 		<nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand" href="#">LeadWithHer</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+		  <h1 class="navbar-brand">LeadWithHer</h1>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		  </button>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link about-us" href="#">About us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link guide-lines" href="#">Guidelines</a>
-      </li>
-			<li class="nav-item">
-        <a class="nav-link coc" href="#">Code of Conduct</a>
-      </li>
-			<li class="nav-item">
-        <a class="nav-link team" href="#">Team</a>
-      </li>
-			<li class="nav-item">
-        <a class="nav-link r-btn" href="#">Register</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-list">
+		      <li class="nav-item">
+		        <a class="nav-link nav-bar-" href="#">Home</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link about-us" href="javascript:void(0)">About us</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link guide-lines" href="#">Guidelines</a>
+		      </li>
+					<li class="nav-item">
+		        <a class="nav-link coc" href="#">Code of Conduct</a>
+		      </li>
+					<li class="nav-item">
+		        <a class="nav-link team" href="#">Team</a>
+		      </li>
+					<li class="nav-item register">
+		        <a class="r-btn" href="#">Register</a>
+		      </li>
+		    </ul>
+		  </div>
+	</nav>
 
 	<!--	<nav class="navbar">
 			<h1 class="navbar-brand">LeadWithHer</h1>
@@ -187,7 +191,7 @@
 			</div>
 
 			<div class="btn-get-started">
-				<button class="get-btn">Get Started</button>
+				<button class="btn get-btn">Get Started</button>
 			</div>
 
 		</section>
@@ -196,10 +200,10 @@
 
 		<section class="aboutus">
 
-			<div class="main-aboutus">
+			<div class="container-fluid main-aboutus">
 
 				<div class="img-aboutus">
-					<img src="images/aboutus.jpg" alt="aboutus">
+					<img src="images/aboutus.jpg" class="img-responsive" alt="aboutus">
 				</div>
 
 				<div class="text-aboutus">
@@ -214,7 +218,7 @@
 
 		<section class="guidelines">
 
-			<div class="main-guidelines">
+			<div class="container-fluid main-guidelines">
 				<h2 class="heading-guide">Guidelines</h2>
 				<h3 class="subheading-guide">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</h3>
 
@@ -236,7 +240,7 @@
 
 		<section class="code-of-conduct">
 
-			<div class="main-code">
+			<div class="container-fluid main-code">
 
 				<div class="text-code">
 					<h2 class="heading-code">Code of Conduct</h2>
@@ -244,8 +248,8 @@
 					<a class="download" href="sana.pdf" download="sana.pdf" target="_blank"><i class="fas fa-download"></i> &nbsp;Download</a>
 				</div>
 
-				<div class="img-code">
-					<img src="images/guidelines.jpg" alt="code-of-conduct">
+				<div class="img-code ">
+					<img src="images/guidelines.jpg" class="img-responsive" alt="code-of-conduct">
 				</div>
 
 			</div>
@@ -254,7 +258,7 @@
 
 		<section class="our-team">
 
-			<div class="text-team">
+			<div class=" text-team">
 				<h2 class="heading-team">Our Team</h2>
 				<p class="para-team">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
 			</div>
@@ -294,13 +298,13 @@
 
 		<section class="contact">
 
-			<div class="contact-flex">
+			<div class="container-fluid row contact-flex">
 
-				<div class="main-register">
+				<div class="col-lg-6 main-register text-md-center">
 					<h1 class="register-heading">Register Your Self</h1>
-					<p class="register-para">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					<p class="register-para text-md-center">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
 
-					<div class="sub-register">
+					<div class="sub-register text-md-center">
 						<img src="images/be-mentor.jpg" alt="be-mentor" class="register-img">
 						<h2 class="register-text">I want to be a mentor</h2>
 					</div>
@@ -317,7 +321,7 @@
 
 	            </div>
 
-	            <div class="form">
+	            <div class="col-lg-6 form">
 
 	            	<h1 class="form-heading">Fill The Form</h1>
 
@@ -360,15 +364,15 @@
 
 	<footer>
 
-		<div class="main-footer">
+		<div class="continer-fluid main-footer">
 
-			<div class="footer-links">
+			<div class="row footer-links">
 
-				<div class="footer-logo">
+				<div class="col-md-3 text-md-left align-self-center footer-logo">
 					<h1 class="f-logo">LeadWithHer</h1>
 				</div>
 
-				<div class="main-links">
+				<div class="col text-sm-center align-self-center main-links">
 					<ul>
 						<li class="links"><a href="javascript:void(0)" class="footer-an home">Home</a></li>
 						<li class="links"><a href="javascript:void(0)" class="footer-an about-us">About Us</a></li>

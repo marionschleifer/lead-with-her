@@ -10,19 +10,26 @@
 /*---------------------------- Header ----------------------*/
 .header-section{
     background-image: url(images/get-background.jpg);
-    height: 900px;
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-ul{
-  margin-left: 30%;
+.nav-list{
+  margin-left: 25%;
 }
 .navbar-light .navbar-brand {
     color: white;
     font-size: 2em;
     margin: 3% 3%;
 }
-.navbar-light .navbar-nav .nav-link {
+.nav-item{
+  padding:0 4px;
+}
+.navbar-light .navbar-nav .nav-link{
     color: white;
     float: right;
+    font-size: 20px;
     padding: 7px 25px;
     border-radius: 20px;
 }
@@ -56,12 +63,13 @@ ul{
     margin-left: 1%;
     border-radius: 20px;
 }
-.nav-bar--:hover{
+.navbar-light .navbar-nav .nav-link:hover{
     background-color: rgb(121, 83, 136);
+    color: white;
 }
 .nav-an{
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bolder;
     text-decoration: none;
 }
@@ -72,44 +80,43 @@ ul{
    margin-left: 5%;
 }
 .r-btn{
-    padding: 7px 25px;
-    font-size: 18px;
-    font-family: Roboto, sans-serif;
-    background-color: white;
-    color: rgb(120, 40, 92);
-    font-weight: 900;
-    border-radius: 20px;
-    outline: none;
+  background-color: white;
+  color: rgb(121, 83, 136);
+  float: right;
+  font-weight: 900;
+  font-size: 18px;
+  padding: 7px 25px;
+  border-radius: 20px;
 }
 .r-btn:hover{
     text-decoration: underline;
+    color: rgba(121, 83, 136);
 }
 /*---------------------------- Get Started Section ----------------------*/
-.text-get-started{
+ .text-get-started{
+
     padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
+
 }
 .text-one{
     font-weight: 900;
     font-family: Roboto, sans-serif;
     font-size: 3em;
+    margin: 0 20%;
     color: white;
     text-align: center;
-    margin-right: 25%;
-    margin-left: 25%;
     padding-bottom: 5%;
 }
 .text-two{
     color: white;
     font-weight: lighter;
     text-align: center;
-    margin-right: 26%;
-    margin-left: 25%;
+    margin: 0 20%;
     padding-bottom: 3%;
 }
 .btn-get-started{
     text-align: center;
+    padding-bottom: 5%;
 }
 .get-btn{
     padding: 7px 25px;
@@ -123,6 +130,7 @@ ul{
 }
 .get-btn:hover{
     text-decoration: underline;
+    color: rgb(120,40,92);
 }
 /*---------------------------- About Us Section ----------------------*/
 .main-aboutus{
@@ -153,8 +161,11 @@ ul{
 /*---------------------------- Guidelines Section ----------------------*/
 .main-guidelines{
     background-image: url(images/background-code.jpg);
-    height: 962px;
-    padding: 5%;
+    height:auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 5%;
 }
 .heading-guide{
     text-align: center;
@@ -327,7 +338,7 @@ ul{
 }
 .main-register{
     width: 100%;
-    padding-top: 7%;
+    padding: 5% 0;
 }
 .register-heading{
     font-size: 3em;
@@ -338,7 +349,7 @@ ul{
 }
 .register-para{
     text-align: justify;
-    padding: 5% 0;
+    padding-top: 3%;
     margin-right: 15%;
     margin-left: 5%;
     color: #6e6e6e;
@@ -355,13 +366,15 @@ ul{
     padding-top: 5%;
 }
 .register-text{
-    margin-left: 21%;
-    margin-top: 30px;
+    margin-left: 19%;
+    margin-top: 20px;
     text-align: left;
+    line-height: 1.4;
 }
 .form{
     width: 100%;
-    height: 850px;
+    height: auto;
+    padding-bottom: 3%;
     box-shadow: 0px 0px 20px 15px #8080800d;
 }
 .form-heading{
@@ -427,27 +440,25 @@ ul{
 .footer-links{
     height: 125px;
     border-top: 1px solid #00000021;
-    display: flex;
+
 }
 .footer-logo{
-    width: 40%;
-    margin-top: 37px;
     margin-left: 5%;
 }
 .f-logo{
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 38px;
     color: rgb(120, 40, 92);
 }
 .main-links{
-    width: 70%;
+
 }
 .links{
     display: inline-block;
     list-style-type: none;
-    margin-left: 8%;
-    margin-top: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
 }
 .footer-an{
     text-decoration: none;
@@ -479,7 +490,7 @@ ul{
 }
 .end-line{
     float: right;
-    margin-right: 7%;
+    margin-right: 10%;
     margin-top: 47px;
     color: white;
     font-size: 20px;
