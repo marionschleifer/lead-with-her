@@ -34,50 +34,14 @@
     border-radius: 20px;
 }
 .navbar-light .navbar-toggler {
-    color: white;
-    border-color: white;
-}
-.logoname{
-    font-size: 2em;
-    position: absolute;
-    margin-top: 5%;
-    left: 5%;
-    color: white;
-    font-family: Roboto, sans-serif;
-}
-.nav-bar-box{
-    width: 100%;
-    margin-left: 15%;
-    padding-left: 10%;
-    padding-bottom: 5%;
+    background-color: white;
 }
 .nav-bar-{
     background-color: rgb(121, 83, 136);
 }
-.nav-bar--{
-    display: inline-block;
-    list-style-type: none;
-    color: white;
-    padding: 7px 25px;
-    margin-top: 5%;
-    margin-left: 1%;
-    border-radius: 20px;
-}
 .navbar-light .navbar-nav .nav-link:hover{
     background-color: rgb(121, 83, 136);
     color: white;
-}
-.nav-an{
-    color: white;
-    font-size: 18px;
-    font-weight: bolder;
-    text-decoration: none;
-}
-.register-btn{
-   display: inline-block;
-   list-style-type: none;
-   margin-top: 5%;
-   margin-left: 5%;
 }
 .r-btn{
   background-color: white;
@@ -94,9 +58,7 @@
 }
 /*---------------------------- Get Started Section ----------------------*/
  .text-get-started{
-
     padding-top: 100px;
-
 }
 .text-one{
     font-weight: 900;
@@ -244,7 +206,11 @@
 /*---------------------------- Our Team Section ----------------------*/
 .our-team{
     background-image: url('images/team-background.jpg');
-    height: 1000px;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    background-repeat: no-repeat;
+    padding-bottom: 5%;
 }
 .heading-team{
     text-align: center;
@@ -348,7 +314,6 @@
     margin-left: 5%;
 }
 .register-para{
-    text-align: justify;
     padding-top: 3%;
     margin-right: 15%;
     margin-left: 5%;
@@ -368,7 +333,6 @@
 .register-text{
     margin-left: 19%;
     margin-top: 20px;
-    text-align: left;
     line-height: 1.4;
 }
 .form{

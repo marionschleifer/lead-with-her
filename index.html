@@ -5,13 +5,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script
-  	src="https://code.jquery.com/jquery-3.4.1.min.js"
-  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  	crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
 	<script type="text/javascript" src="slick/slick/slick.min.js"></script>
@@ -134,11 +130,11 @@
 
 		<nav class="navbar navbar-expand-lg navbar-light">
 		  <h1 class="navbar-brand">LeadWithHer</h1>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		  </button>
 
-		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		  <div class="collapse navbar-collapse" id="menu">
 		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-list">
 		      <li class="nav-item">
 		        <a class="nav-link nav-bar-" href="#">Home</a>
@@ -161,23 +157,6 @@
 		    </ul>
 		  </div>
 	</nav>
-
-	<!--	<nav class="navbar">
-			<h1 class="navbar-brand">LeadWithHer</h1>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-			<div class="nav-bar-box">
-				<ul class="nav-bar">
-					<li class="nav-bar-- nav-bar-"> <a class="nav-an" href="javascript:void(0)">Home</a></li>
-					<li class="nav-bar--"> <a class="nav-an about-us" href="javascript:void(0)">About us</a></li>
-					<li class="nav-bar--"> <a class="nav-an guide-lines" href="javascript:void(0)">Guidelines</a></li>
-					<li class="nav-bar--"> <a class="nav-an coc" href="javascript:void(0)">Code of Conduct</a></li>
-					<li class="nav-bar--"> <a class="nav-an team" href="javascript:void(0)">Team</a></li>
-					<li class="register-btn"><button class="r-btn">Register</button></li>
-				</ul>
-			</div>
-		</nav>-->
 
 	</header>
 
@@ -300,24 +279,29 @@
 
 			<div class="container-fluid row contact-flex">
 
-				<div class="col-lg-6 main-register text-md-center">
-					<h1 class="register-heading">Register Your Self</h1>
-					<p class="register-para text-md-center">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				<div class="col-lg-6 main-register">
+					<h1 class="register-heading text-lg-left text-sm-center">Register Your Self</h1>
+					<p class="register-para text-lg-left text-sm-center">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
 
-					<div class="sub-register text-md-center">
-						<img src="images/be-mentor.jpg" alt="be-mentor" class="register-img">
-						<h2 class="register-text">I want to be a mentor</h2>
+					<div class="row">
+
+						<div class="sub-register col-12">
+							<img src="images/be-mentor.jpg" alt="be-mentor" class="register-img">
+							<h2 class="register-text">I want to be a mentor</h2>
+						</div>
+
+						<div class="sub-register col-12">
+							<img src="images/want-mentor.jpg" alt="want-mentor" class="register-img">
+							<h2 class="register-text">I want a mentor</h2>
+						</div>
+
+						<div class="sub-register col-12">
+							<img src="images/general.jpg" alt="general" class="register-img">
+							<h2 class="register-text">General Questions</h2>
+						</div>
+
 					</div>
 
-					<div class="sub-register">
-						<img src="images/want-mentor.jpg" alt="want-mentor" class="register-img">
-						<h2 class="register-text">I want a mentor</h2>
-					</div>
-
-					<div class="sub-register">
-						<img src="images/general.jpg" alt="general" class="register-img">
-						<h2 class="register-text">General Questions</h2>
-					</div>
 
 	            </div>
 
