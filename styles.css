@@ -24,13 +24,13 @@
     margin: 3% 3%;
 }
 .nav-item{
-  padding:0 4px;
+  padding:0 4px 0 0;
 }
 .navbar-light .navbar-nav .nav-link{
     color: white;
     float: right;
-    font-size: 20px;
-    padding: 7px 25px;
+    font-size: 18px;
+    padding: 7px 20px;
     border-radius: 20px;
 }
 .navbar-light .navbar-toggler {
@@ -331,7 +331,7 @@
     padding-top: 5%;
 }
 .register-text{
-    margin-left: 19%;
+    margin-left: 21%;
     margin-top: 20px;
     line-height: 1.4;
 }
@@ -357,7 +357,7 @@
     margin-left: 4%;
 }
 .mentee, .mentor, .question{
-    margin-left: 2%;
+    margin-left: 1%;
     font-size: 18px;
     font-weight: 700;
 }
