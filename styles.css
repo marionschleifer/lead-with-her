@@ -15,16 +15,10 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.nav-list{
-  margin-left: 25%;
-}
 .navbar-light .navbar-brand {
     color: white;
     font-size: 2em;
     margin: 3% 3%;
-}
-.nav-item{
-  padding:0 4px 0 0;
 }
 .navbar-light .navbar-nav .nav-link{
     color: white;
@@ -41,6 +35,9 @@
 }
 .navbar-light .navbar-nav .nav-link:hover{
     background-color: rgb(121, 83, 136);
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:visited{
     color: white;
 }
 .r-btn{
